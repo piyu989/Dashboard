@@ -2,11 +2,11 @@ package com.dashboard.service.impl;
 
 import java.util.List;
 
+import com.dashboard.user.Swemsewak;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.dashboard.repository.UserRepository;
 import com.dashboard.service.UserService;
-import com.dashboard.user.User;
 
 public class UserServiceImpl implements UserService {
 	
@@ -14,13 +14,13 @@ public class UserServiceImpl implements UserService {
 	private UserRepository userRepo;
 
 	@Override
-	public User save(User user) {
+	public Swemsewak save(Swemsewak swemsewak) {
 		// TODO Auto-generated method stub
-		return userRepo.save(user);
+		return userRepo.save(swemsewak);
 	}
 
 	@Override
-	public List<User> getUserUsingContactNo(Long contactNo) {
+	public List<Swemsewak> getUserUsingContactNo(Long contactNo) {
 		// TODO Auto-generated method stub
 		return userRepo.findAllByContactNo(contactNo);
 	}

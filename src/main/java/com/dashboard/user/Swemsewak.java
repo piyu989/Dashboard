@@ -7,14 +7,15 @@ import lombok.Data;
 
 @Data
 @Entity
-public class User {
+public class Swemsewak {
 
 	private Long id;
 	private String name;
 	private Long contactNo;
 	private String shaka;
 	private String address;
-	private int age;
+	private int DOB;
 	private Daitv daitiv;
+	private String occupation;
 	
 }

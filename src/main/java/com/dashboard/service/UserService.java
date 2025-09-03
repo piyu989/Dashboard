@@ -2,9 +2,9 @@ package com.dashboard.service;
 
 import java.util.List;
 
-import com.dashboard.user.User;
+import com.dashboard.user.Swemsewak;
 
 public interface UserService {
-	User save(User user);
-	List<User> getUserUsingContactNo(Long contactNo);
+	Swemsewak save(Swemsewak swemsewak);
+	List<Swemsewak> getUserUsingContactNo(Long contactNo);
 }
